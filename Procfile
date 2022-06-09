@@ -1,0 +1,1 @@
+web: gunicorn autoExtract.wsgi --log-file -
