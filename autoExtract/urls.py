@@ -23,6 +23,7 @@ router = routers.DefaultRouter()
 
 router.register(r'data',views.dataViewSet)
 urlpatterns = [
+    path('',include('autoExtractApp.urls')),
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
 ]
